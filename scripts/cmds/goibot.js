@@ -40,7 +40,7 @@ config: {
 
   if (event.body.indexOf("Bot") == 0 || (event.body.toLowerCase() == "baby") || (event.body.indexOf("bot") == 0)) {
     var msg = {
-      body: ` \n𝐁𝐨𝐭 𝐏𝐫𝐞𝐟𝐢𝐱 : ➤ 【 / 】                                                        \n╰💌➤ 🗣️ ${rand} `
+      body: ` ${rand} `
     }
     return api.sendMessage(msg, threadID, messageID);
   }
