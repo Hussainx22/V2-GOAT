@@ -1,7 +1,7 @@
 {
   "facebookAccount": {
-    "email": "xrushb4t1@gmail.com",
-    "password": "BLANK@@009",
+    "email": "mim.246.x3",
+    "password": "BLANK@@008",
     "2FASecret": "",
     "i_user": "",
     "proxy": null,
@@ -55,7 +55,7 @@
   "FACEBOOK": "https://www.facebook.com/Nazrul.404.Cyber",
   "authorFB": "https://www.facebook.com/Nazrul.404.Cyber",
   "authorEmail": "xrushchoudhury@gmail.com",
-  "prefix": "/",
+  "prefix": "?",
   "database": {
     "type": "sqlite",
     "uriMongodb": "",
