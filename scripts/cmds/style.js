@@ -158,7 +158,7 @@ module.exports.onStart = async ({ event, api, args }) => {
     .map(char => fontMap.map[char] || char)
     .join('');
 
-  const jpgUrl = 'https://i.postimg.cc/q7TMnTm6/Picsart-23-11-27-05-30-14-212.jpg';
+  const jpgUrl = 'https://i.imgur.com/QQIThaL.jpeg';
   const jpgData = await axios.get(jpgUrl, { responseType: 'stream' });
 
   return api.sendMessage({
