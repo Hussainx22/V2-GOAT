@@ -2,23 +2,23 @@ const fs = require('fs');
 const axios = require('axios');
 
 const baseApiUrl = async () => {
-  const base = await axios.get(`https://raw.githubusercontent.com/Blankid018/D1PT0/main/baseApiUrl.json`);
+  const base = await axios.get('https://raw.githubusercontent.com/Blankid018/D1PT0/main/baseApiUrl.json');
   return base.data.api;
 };
 
 module.exports.config = {
   name: "gist",
   version: "6.9.0",
-  hasPermission: 2,
-  credits: "dipto",
+  role: 2,
+  author: "dipto",
   usePrefix: true,
   description: "Convert code into link",
-  commandCategory: "convert",
-  usages: "[filename]/[reply and file name]",
-  cooldowns: 1
+  category: "convert",
+  guide: { en: "[filename]/[reply and file name]" },
+  countDown: 1
 };
 
-module.exports.run = async function ({ api, event, args }) {
+module.exports.onStart = async function ({ api, event, args }) {
   const admin = ["your uid here"];
   const fileName = args[0];
 
@@ -27,7 +27,7 @@ module.exports.run = async function ({ api, event, args }) {
     return;
   }
 
-  const path = `modules/commands/${fileName}.js`;
+  const path = `scripts/cmds/${fileName}.js`;
   try {
     let code = '';
 
@@ -49,6 +49,6 @@ module.exports.run = async function ({ api, event, args }) {
 
   } catch (error) {
     console.error("An error occurred:", error);
-    api.sendMessage("Error occurred while processing the command.", event.threadID, event.messageID);
+    api.sendMessage("command not found or api problem.", event.threadID, event.messageID);
   }
 };
