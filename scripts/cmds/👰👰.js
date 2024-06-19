@@ -1,4 +1,4 @@
-?cmd install 👰‍♀️👰‍♀️.js.js const fs = require("fs");
+const fs = require("fs");
 module.exports.config = {
 	name: "👰‍♀️👰‍♀️",
    version: "1.0.1",
