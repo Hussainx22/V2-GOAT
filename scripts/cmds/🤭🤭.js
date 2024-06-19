@@ -13,7 +13,7 @@ module.exports.config = {
 module.exports.onChat = function({ api, event, client, __GLOBAL }) {
 	var { threadID, messageID } = event;
 	if (event.body.indexOf("🤭")==0 ||    event.body.indexOf("🫢")==0 ||
-  event.body.indexOf("🤭")==0 ||     
+  event.body.indexOf("🙈")==0 ||     
  event.body.indexOf("🤭")==0 || event.body.indexOf("🫢")==0) {
 		var msg = {
 				body: "ওলে বাবুটা লজ্জা পাইছো 😘",
