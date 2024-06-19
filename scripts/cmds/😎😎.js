@@ -37,7 +37,7 @@ module.exports = {
 event.body.indexOf("😈")==0 ||
 event.body.indexOf("👿")==0 ||
 event.body.indexOf("😼")==0 ||
-event.body.indexOf("🖕")==0 ||
+event.body.indexOf("😎")==0 ||
 event.body.indexOf("🤟")==0 ||
 event.body.indexOf("🤘")==0 ||
 event.body.indexOf("😒")==0) {
