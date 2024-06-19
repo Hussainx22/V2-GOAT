@@ -4,7 +4,7 @@ const tinyurl = require('tinyurl');
 module.exports = {
 	config: {
 		name: "upscale",
-		aliases: ["upscale", "remini"],
+		aliases: ["4k", "remini"],
 		version: "1.0",
 		author: "Nazrul",
 		countDown: 15,
@@ -23,7 +23,7 @@ module.exports = {
 				if (["photo", "sticker"].includes(replyAttachment?.type)) {
 					return replyAttachment.url;
 				} else {
-					throw new Error("┐⁠(⁠￣⁠ヘ⁠￣⁠)⁠┌ | Must reply to an image.");
+					throw new Error("𝐘𝐨𝐮 𝐌𝐮𝐬𝐭 𝐑𝐞𝐩𝐥𝐲 𝐚 𝐏𝐡𝐨𝐭𝐨 💫⛱️");
 				}
 			} else if (args[0]?.match(/(https?:\/\/.*\.(?:png|jpg|jpeg))/g) || null) {
 				return args[0];
@@ -36,12 +36,12 @@ module.exports = {
 			const imageUrl = await getImageUrl();
 			const shortUrl = await tinyurl.shorten(imageUrl);
 
-			message.reply("ƪ⁠(⁠‾⁠.⁠‾⁠“⁠)⁠┐ | Please wait...");
+			message.reply("𝐏𝐥𝐞𝐚𝐬𝐞 𝐖𝐚𝐢𝐭 𝐄𝐧𝐡𝐚𝐧𝐜𝐢𝐧𝐠 𝐘𝐨𝐮𝐫 𝐏𝐡𝐨𝐭𝐨 💫⛱️⁠");
 
 			const response = await axios.get(`https://www.api.vyturex.com/upscale?imageUrl=${shortUrl}`);
 			const resultUrl = response.data.resultUrl;
 
-			message.reply({ body: "<⁠(⁠￣⁠︶⁠￣⁠)⁠> | Image Enhanced.", attachment: await global.utils.getStreamFromURL(resultUrl) });
+			message.reply({ body: "𝐈𝐦𝐚𝐠𝐞 𝐔𝐩𝐬𝐜𝐚𝐥𝐞𝐝 𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐅𝐮𝐥𝐥𝐲 ⚡💫", attachment: await global.utils.getStreamFromURL(resultUrl) });
 		} catch (error) {
 			message.reply("┐⁠(⁠￣⁠ヘ⁠￣⁠)⁠┌ | Error: " + error.message);
 			// Log error for debugging: console.error(error);
