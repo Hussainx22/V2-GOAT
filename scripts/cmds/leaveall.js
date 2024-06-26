@@ -3,7 +3,7 @@ module.exports = {
     name: "leaveall",
 aliases: ["outall"],
     version: "1.0",
-    author: "otineeey",
+    author: "Nazrul",
     countDown: 5,
     role: 2,
     shortDescription: {
