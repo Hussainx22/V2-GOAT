@@ -22,7 +22,7 @@ module.exports = {
 		if (!args[0])
 			return message.reply("Please enter the message you want to send to all groups");
 		const formSend = {
-			body: `Notice from SuperAdmin\n────────────────\n${args.join(" ")}`,
+			body: `Notice from admin\n────────────────\n${args.join(" ")}`,
 			attachment: await getStreamsFromAttachment([...event.attachments, ...(event.messageReply?.attachments || [])])
 		}
 
