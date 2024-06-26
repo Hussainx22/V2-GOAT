@@ -24,7 +24,7 @@ module.exports.onStart = async function ({ api, event, args }) {
 
   try {
    let path = __dirname + `/cache/`;
-    const response = await axios.get(`https://apis-x4.onrender.com/api/download/facebook?url=${encodeURI(link)}`);
+    const response = await axios.get(`https://x5-apis.onrender.com/api/download/facebook?url=${encodeURI(link)}`);
     await fs.ensureDir(path);
    path += 'N4ZR9L.mp4';
     const data = response.data.result;
