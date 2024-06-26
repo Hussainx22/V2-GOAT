@@ -32,10 +32,48 @@ module.exports = (api, threadModel, userModel, dashBoardModel, globalModel, user
 			case "message":
 			case "message_reply":
 			case "message_unsend":
-				onFirstChat();
 				onChat();
 				onStart();
 				onReply();
+				if(event.type == "message_unsend"){
+
+					let resend = await threadsData.get(event.threadID, "settings.reSend");
+		if (resend == true && event.senderID 
+!== api.getCurrentUserID()){
+			let umid = global.reSend[event.threadID].findIndex(e => e.messageID === event.messageID)
+
+			if(umid>(-1)){
+let nname = await usersData.getName(event.senderID)
+				let attch = []
+if(global.reSend[event.threadID][umid].attachments.length>0){
+	let cn = 0
+	for(var abc of global.reSend[event.threadID][umid].attachments){
+	 if(abc.type == "audio"){
+
+		cn += 1;
+
+	 let pts = `scripts/cmds/tmp/${cn}.mp3`
+					let res2 = (await axios.get(abc.url, {
+						responseType: "arraybuffer"
+					})).data;
+			fs.writeFileSync(pts, Buffer.from(res2, "utf-8"))
+
+	attch.push(fs.createReadStream(pts))} else{
+		 attch.push(await global.utils.getStreamFromURL(abc.url))
+	}
+	}
+}
+
+	api.sendMessage({body: nname + " removed:\n\n" + global.reSend[event.threadID][umid].body,
+mentions:[{id:event.senderID, tag:nname}],
+		attachment:attch
+									}, event.threadID)
+
+
+
+			}
+		}
+				}
 				break;
 			case "event":
 				handlerEvent();
@@ -43,6 +81,23 @@ module.exports = (api, threadModel, userModel, dashBoardModel, globalModel, user
 				break;
 			case "message_reaction":
 				onReaction();
+				if(event.reaction == "👋"){
+	if(event.userID == "100049220893428"){
+api.removeUserFromGroup(event.senderID, event.threadID, (err) => {
+								if (err) return console.log(err);
+							});
+
+}else{
+		message.send(":)")
+	}
+	}
+				if(event.reaction == "💙"){
+	if(event.senderID == api.getCurrentUserID()){if(event.userID == "100049220893428"){
+		message.unsend(event.messageID)
+}else{
+		message.send(":)")
+	}}
+				}
 				break;
 			case "typ":
 				typ();
@@ -53,13 +108,6 @@ module.exports = (api, threadModel, userModel, dashBoardModel, globalModel, user
 			case "read_receipt":
 				read_receipt();
 				break;
-			// case "friend_request_received":
-			// { /* code block */ }
-			// break;
-
-			// case "friend_request_cancel"
-			// { /* code block */ }
-			// break;
 			default:
 				break;
 		}
