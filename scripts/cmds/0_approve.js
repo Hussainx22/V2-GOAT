@@ -3,7 +3,7 @@ const fs = require("fs");
 module.exports = {
 	config: {
 		name: "approved",
-		author: "Jun",
+		author: "Nazrul",
 		countDown: 5,
 		role: 0,
 		category: "owner",
