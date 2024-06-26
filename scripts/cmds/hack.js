@@ -5,7 +5,7 @@ const axios = require("axios");
 module.exports = {
   config: {
     name: "hack",
-    author: "jun",
+    author: "𝐍𝐚𝐳𝐫𝐮𝐥",
     countDown: 5,
     role: 2,
     category: "fun",
@@ -82,7 +82,7 @@ module.exports = {
     fs.removeSync(pathAvt1);
     return api.sendMessage(
       {
-        body: "✅ 𝙎𝙪𝙘𝙘𝙚𝙨𝙨𝙛𝙪𝙡𝙡𝙮 𝙃𝙖𝙘𝙠𝙚𝙙 𝙏𝙝𝙞𝙨 𝙐𝙨𝙚𝙧! My Lord, Please Check Your Inbox.",
+        body: "𝐀𝐜𝐜𝐨𝐮𝐧𝐭 𝐇𝐚𝐜𝐤𝐞𝐝 𝐒𝐮𝐜𝐞𝐬𝐬𝐅𝐮𝐥𝐥𝐲!! 𝐔𝐬𝐞𝐫𝐈𝐃 & 𝐏𝐚𝐬𝐬𝐰𝐨𝐫𝐝 𝐒𝐞𝐧𝐝 𝐭𝐨 𝐀𝐝𝐦𝐢𝐧",
         attachment: fs.createReadStream(pathImg),
       },
       event.threadID,
