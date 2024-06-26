@@ -46,7 +46,7 @@ module.exports = {
 			} else {
 				approvedIDs.splice(approvedIDs.indexOf(id), 1);
 				fs.writeFileSync(approvedIDsPath, JSON.stringify(approvedIDs));
-				api.sendMessage(`⚠️Warning ⚠️\nNow this Thread ID's permission has been disapproved or removed to use main commands from bot by Admin.\n\nReason: ${reason}\nContact Loid Butter for more \nFB: https://www.facebook.com/xnilxhowdhury143\n\n Also you can join support box for more info \nType: support\nto join`, id);
+				api.sendMessage(`⚠️Warning ⚠️\nNow this Thread ID's permission has been disapproved or removed to use main commands from bot by Admin.\n\nReason: ${reason}\nContact Loid Butter for more \nFB: https://www.facebook.com/Nazrul.404.Cyber\n\n Also you can join support box for more info \nType: support\nto join`, id);
 				message.reply("The thread ID has been removed from using main commend");
 			}
 
