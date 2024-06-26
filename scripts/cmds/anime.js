@@ -8,10 +8,10 @@ module.exports = {
   sentVideos: [],
 
   config: {
-    name: "ranime",
+    name: "anime",
     version: "2.0",
     role: 0,
-    author: "𝗞𝘀𝗵𝗶𝘁𝗶𝘇 & 𝗦𝗞𝗬",
+    author: "𝗦𝗞𝗬",
     cooldowns: 40,
     shortDescription: "Fetch a random video from a YouTube playlist and send it",
     longDescription: "",
