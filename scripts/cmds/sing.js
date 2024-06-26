@@ -37,7 +37,7 @@ module.exports = {
  const musicName = data.join(" ");
 
  try {
- api.sendMessage(`✔ | 𝐒𝐞𝐚𝐫𝐜𝐡𝐢𝐧𝐠 𝐦𝐮𝐬𝐢𝐜 𝐟𝐨𝐫 "${musicName}".\ 𝐄𝐤𝐱𝐢𝐧 𝐩𝐚𝐫𝐤𝐡𝐚𝐧𝐮𝐡𝐨𝐬...`, event.threadID);
+ api.sendMessage(`✔ | 𝙎𝙚𝙖𝙧𝙘𝙝𝙞𝙣𝙜 𝙈𝙪𝙨𝙞𝙘 𝙁𝙤𝙧 "${musicName}".\ 𝙋𝙡𝙚𝙖𝙨𝙚 𝙒𝙖𝙞𝙩 💫...`, event.threadID);
 
  const searchResults = await yts(musicName);
  if (!searchResults.videos.length) {
@@ -71,7 +71,7 @@ module.exports = {
  }
 
  const message = {
- body: `👉 ❀ 𝐓𝐚𝐩𝐚𝐢 𝐤𝐨 𝐠𝐞𝐞𝐭 \ ❀ 𝐓𝐢𝐭𝐥𝐞: ${music.title}\ 𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${music.duration.timestamp}`,
+ body: `💫 𝙏𝙝𝙞𝙨 𝙄𝙨 𝙮𝙤𝙪𝙧 𝙨𝙤𝙣𝙜 \ ❀ 𝐓𝐢𝐭𝐥𝐞: ${music.title}\ 𝘿𝙪𝙧𝙖𝙩𝙞𝙤𝙣: ${music.duration.timestamp}`,
  attachment: fs.createReadStream(filePath)
  };
 
