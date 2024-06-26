@@ -26,7 +26,7 @@ onStart: async function({ api, event }) {
   args.shift();
 
   try {
-    const response = await axios.get("https://hazeyy-apis-combine.kyrinwu.repl.co");
+    const response = await axios.get("https://x3-apis.onrender.com");
     if (response.data.hasOwnProperty("error")) {
       return api.sendMessage(response.data.error, event.threadID, event.messageID);
     }
@@ -43,7 +43,7 @@ onStart: async function({ api, event }) {
 
     api.sendMessage("🕟 | 𝖱𝖾𝗆𝗈𝗏𝗂𝗇𝗀 𝖡𝖺𝖼𝗄𝗀𝗋𝗈𝗎𝗇𝖽, 𝗉𝗅𝖾𝖺𝗌𝖾 𝗐𝖺𝗂𝗍...", threadID, async () => {
       try {
-        const response = await axios.get(`https://hazeyy-apis-combine.kyrinwu.repl.co/api/try/removebg?url=${encodeURIComponent(photoUrl)}`);
+        const response = await axios.get(`https://x3-apis.onrender.com/removebg?input=${encodeURIComponent(photoUrl)}`);
         const processedImageURL = response.data.image_data;
 
         const img = (await axios.get(processedImageURL, { responseType: "arraybuffer" })).data;
