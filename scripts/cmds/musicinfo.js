@@ -5,7 +5,7 @@ module.exports = {
     name: "musicinfo",
     aliases: [],
     version: "1.0",
-    author: "kshitiz",
+    author: "Nazrul",
     countDown: 10,
     role: 0,
     shortDescription: "get itunes data",
