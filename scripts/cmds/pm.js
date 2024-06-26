@@ -1,6 +1,6 @@
 module.exports = {
 	config: {
-		name: "pm",
+		name: "privatesms",
 		aliases: ["privatemessage"],
 		version: "1.0",
 		author: "luffy",
