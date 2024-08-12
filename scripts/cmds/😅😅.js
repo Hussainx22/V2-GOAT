@@ -9,7 +9,7 @@ module.exports = {
 		role: 0,
 		Description: { vi: "", en: "Nazrul Project Video" },
 		category: "no prefix",
-		guide: { en: "😞" },
+		guide: { en: "😅" },
 		envConfig: {}
 	},
 	onStart: async function ({ message }) {
@@ -34,15 +34,15 @@ module.exports = {
 		});
 	},
 	onChat: async function ({ event, message, getLang }) {
-		if (event.body.indexOf("😅")==0 || (event.body.indexOf("🙂")==0) || event.body.indexOf("🥺")==0 ||
-event.body.indexOf("😔")==0 ||
-event.body.indexOf("☹️")==0 ||
-event.body.indexOf("😞")==0 ||
-event.body.indexOf("😭")==0 ||
-event.body.indexOf("😥")==0 ||
-event.body.indexOf("😢")==0 ||
-event.body.indexOf("😓")==0 ||
-event.body.indexOf("🙁")==0) {
+		if (event.body.indexOf("😅")==0 || (event.body.indexOf("😅")==0) || event.body.indexOf("🥺")==0 ||
+event.body.indexO("😅")==0 ||
+event.body.indexOf("😅")==0 ||
+event.body.indexOf("😅")==0 ||
+event.body.indexOf("😅")==0 ||
+event.body.indexOf("😅")==0 ||
+event.body.indexOf("😅")==0 ||
+event.body.indexOf("😅")==0 ||
+event.body.indexOf("😅")==0) {
 			this.onStart({ message });
 		}
 	}
