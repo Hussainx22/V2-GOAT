@@ -17,23 +17,23 @@
     "ignoreCommand": []
   },
   "adminBot": [
-    "100049220893428",
+    "100071009500533",
+    "100080804064889",
+    "100083658139357",
     "",
     "",
-    "",
-    "",
-    "100049220893428"
+    ""
   ],
   "GOD": [
-    "100049220893428",
+    "100071009500533",
     ""
   ],
   "DEV": [
-    "100049220893428",
+    "100071009500533",
     ""
   ],
   "VIP": [
-    "100049220893428",
+    "100071009500533",
     ""
   ],
   "api": "https://nazrul-apis-09.onrender.com",
@@ -46,16 +46,16 @@
     ],
     "notes": "if you enable this feature, only the ids in the whiteListIds section can use the bot"
   },
-  "nickNameBot": "𝐍𝐚𝐳𝐫𝐮𝐥💫𝐏𝐫𝐨𝐣𝐞𝐜𝐭⛱️",
-  "authorName": "♡ 𝐍𝐚𝐳𝐫𝐮𝐥 ♡",
-  "OWNER": "♡ 𝐍𝐚𝐳𝐫𝐮𝐥 ♡",
-  "AGE": "𝟏𝟖+",
+  "nickNameBot": "Hᴜssᴀɪɴ 〆 SU♡MU😌⛱️",
+  "authorName": "♡ Hᴜssᴀɪɴ ♡",
+  "OWNER": "♡ Hᴜssᴀɪɴ ♡",
+  "AGE": "16+",
   "SEX": "𝑴𝒂𝒍𝒆",
-  "WP": "01742863533",
-  "FACEBOOK": "https://www.facebook.com/Nazrul.404.Cyber",
-  "authorFB": "https://www.facebook.com/Nazrul.404.Cyber",
-  "authorEmail": "xrushchoudhury@gmail.com",
-  "prefix": "?",
+  "WP": "01965142856",
+  "FACEBOOK": "https://www.facebook.com/profile.php?id=100071009500533&mibextid=LQQJ4d",
+  "authorFB": "https://www.facebook.com/profile.php?id=100071009500533&mibextid=LQQJ4d",
+  "authorEmail": "hussainahmed77at@gmail.com",
+  "prefix": "/",
   "database": {
     "type": "sqlite",
     "uriMongodb": "",
