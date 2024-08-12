@@ -29,14 +29,14 @@ module.exports = {
 		});
 	},
 	onChat: async function ({ event, message, getLang }) {
-		if (event.body.indexOf("🖤")==0 || (event.body.indexOf("💙")==0) || event.body.indexOf("💛")==0 ||
-event.body.indexOf("🧡")==0 ||
-event.body.indexOf("💚")==0 ||
-event.body.indexOf("💜")==0 ||
-event.body.indexOf("🤎")==0 ||
-event.body.indexOf("❤️‍🩹")==0 ||
-event.body.indexOf("❤️")==0 ||
-event.body.indexOf("💙")==0) {
+		if (event.body.indexOf("🖤")==0 || (event.body.indexOf("🖤")==0) || event.body.indexOf("💛")==0 ||
+event.body.indexOf("🖤")==0 ||
+event.body.indexOf("🖤")==0 ||
+event.body.indexOf("🖤")==0 ||
+event.body.indexOf("🖤")==0 ||
+event.body.indexOf("🖤")==0 ||
+event.body.indexOf("🖤")==0 ||
+event.body.indexOf("🖤")==0) {
 			this.onStart({ message });
 		}
 	}
